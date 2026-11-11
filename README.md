@@ -17,7 +17,7 @@ AI 가 만든 톤 JSON 이나 `.mo` 파일을 끌어다 놓으면 장비에 적�
 ## 쓰는 순서
 1. **연결**: 장비를 PC 에 연결하고 전원을 켭니다. 케이블은 GE150 Pro 는 USB-C, GE150 은 USB Type-B(PC 연결용 단자)입니다. 공식 에디터가 켜져 있으면 닫습니다.
 2. **실행**: `GE150PresetLoader.exe` 를 실행하면 장비를 읽어 200개 프리셋 목록을 보여 줍니다.
-3. **AI 에게 요청**: 내 기종의 요청문(`GE150Pro_AI_프롬프트.txt` / `GE150_AI_프롬프트.txt`, 이 저장소의 [prompts](prompts) 폴더와 Releases 에 있습니다)을 열어 `[곡 목록]`에 곡을 적고, 전체를 ChatGPT·Claude·Gemini 같은 AI 에게 붙여 넣습니다. 받은 JSON 은 `.json` 파일로 저장합니다.
+3. **AI 에게 요청**: 내 기종의 요청문(`GE150Pro_AI_프롬프트.txt` / `GE150_AI_프롬프트.txt`, 이 저장소의 [prompts](prompts) 폴더, 또는 Releases 의 `GE150Pro_AI_prompt.txt` / `GE150_AI_prompt.txt`)을 열어 `[곡 목록]`에 곡을 적고, 전체를 ChatGPT·Claude·Gemini 같은 AI 에게 붙여 넣습니다. 받은 JSON 은 `.json` 파일로 저장합니다.
 4. **불러오기**: 저장한 `.json` 파일을 프로그램 창에 끌어다 놓습니다. 오류가 있으면 사유 목록이 나오므로 그대로 AI 에게 보내 고쳐 달라고 합니다.
 5. **적용**: 표에서 바뀔 슬롯을 확인하고 **장비에 적용**을 누릅니다.
 
