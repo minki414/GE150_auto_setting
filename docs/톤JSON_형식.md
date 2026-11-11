@@ -3,6 +3,8 @@
 다른 AI 가 톤 최대 200개를 JSON 파일 하나로 만들면, 프로그램이 `.mo` 로 바꾸고 장비에 적용합니다.
 AI 에게 줄 요청문은 기종별로 `prompts/GE150Pro_AI_프롬프트.txt`, `prompts/GE150_AI_프롬프트.txt` 에 있습니다(이 문서와 같은 규칙이며, 모델 목록은 카탈로그에서 자동으로 만듭니다).
 
+프로그램의 **장비→톤 JSON 저장**(명령줄 `export-json`)이 만드는 파일도 이 형식과 같아서, 장비 상태를 저장했다가 그대로 다시 불러올 수 있습니다.
+
 ## 1. 흐름
 ```
 다른 AI → tonepack.json(1개, 프리셋 1~200개)
@@ -82,3 +84,21 @@ AI 에게 줄 요청문은 기종별로 `prompts/GE150Pro_AI_프롬프트.txt`, 
 - 오류가 1개라도 있으면 `.mo` 를 만들지 않고 오류 목록 창(슬롯·모듈·노브·사유)을 보여 줍니다. 경고만 있으면 만들고 경고 목록을 보여 줍니다.
 - `.mo` 파일 이름은 `01A Wonderwall CLN.mo`. 같은 이름의 폴더가 이미 있으면 시각을 붙여 새로 만듭니다(덮어쓰지 않음). 변환 폴더에는 `tonepack-meta.json`(곡·아티스트·역할, 대상 기종)도 함께 저장됩니다.
 - 명령줄: `python cli.py convert <tonepack.json...> [--out <출력 폴더>] [--device GE150|GE150PRO]`
+
+## 6. GE150 Pro → GE150 자동 변환 (`cli.py to-ge150`)
+GE150 에 없는 Pro 전용 모델을 가장 비슷한 모델로 바꿉니다(소리는 달라질 수 있음). 꺼진 모듈도 같은 표로 바꿉니다.
+
+| 모듈 | Pro 전용 모델 | GE150 모델 | 노브 |
+|---|---|---|---|
+| FX/COMP | S-COMP · RED COMP | YELLOW COMP · BLUE COMP | ATTACK 50, THRES = 100 − SENS, RATIO 40, LEVEL 그대로 |
+| FX/COMP | LIMIT | YELLOW COMP | ATTACK 30, THRES 그대로, RATIO 90, LEVEL 그대로 |
+| FX/COMP | INTEL REDUCER | YELLOW COMP | 기본값, **꺼짐**(대응 모델 없음) |
+| DS/OD | VX YUBE OD · TIGHT METAL · THE JUICER · RUMBLE DRIVE · SOLO · BLUES MOOD · BLUES CRAB · HUSTLE DRIVE | 808 · TIGHT DS · FULL DRV · FULL DRV · RIET · JIMMY OD · JIMMY OD · OBSESSIVE DIST | VOLUME·TONE·GAIN 그대로 |
+| MOD | DUAL PHASER · MODERN PHASER / FLANGER PRO / MODERN ROTARY | PHASER / FLANGER(DELAY 버림) / ROTARY | 같은 이름 노브 그대로 |
+| MOD | OPTICAL TRMOLO | TREMOLO | RATE = SPEED, MIX = INTENSITY, TONE 그대로 |
+| MOD | OCTAVE | ANA-CHORUS | 기본값, **꺼짐**(대응 모델 없음) |
+| REVERB | SHIMMER | HALL | PRE DELAY = P.DELAY, LEVEL·DECAY·TONE 그대로 |
+| 모든 모듈 | 노브 이름 `F.BACK`, `P.DELAY` | `FEEDBACK`, `PRE DELAY` | 이름만 바꿈 |
+
+- 사용자 샘플 칸(AMP·CAB 의 EMPTY)은 옮길 수 없어 그대로 두고 변환 내역에 `오류: 변환 불가` 로 남깁니다(결과 검사에서도 오류). 표에 없는 Pro 전용 모델은 `오류: 대응표 없음` 으로 남기고 그대로 둡니다.
+- 이름은 GE150 의 14자를 넘을 때만 줄입니다: ① 끝 단어 `SOLO` → `SOL` ② 그래도 넘으면 마지막 단어(역할) 앞부분의 공백 제거(`Fall For Me CLN` → `FallForMe CLN`) ③ 그래도 넘으면 앞부분을 잘라 14자.

@@ -11,7 +11,7 @@ from PySide6.QtWidgets import (QApplication, QComboBox, QDialog, QFileDialog, QH
                                QMainWindow, QMessageBox, QProgressBar, QPushButton, QTableWidget, QTableWidgetItem,
                                QVBoxLayout, QWidget)
 
-from ge150 import backup, codec, device, excel, models, mofile, plan, tonepack
+from ge150 import backup, codec, device, excel, export, models, mofile, plan, tonepack
 from ge150 import protocol as P
 
 COLS = ["", "슬롯", "지금 장비", "바꿀 톤", "상태", "경고"]
@@ -103,11 +103,13 @@ class MainWindow(QMainWindow):
         self.btn_stop = QPushButton("중단")
         self.btn_restore = QPushButton("백업에서 되돌리기")
         self.btn_export = QPushButton("장비→.mo 저장")
+        self.btn_export_json = QPushButton("장비→톤 JSON 저장")
         act.addWidget(self.btn_apply)
         act.addWidget(self.btn_stop)
         act.addStretch(1)
         act.addWidget(self.btn_restore)
         act.addWidget(self.btn_export)
+        act.addWidget(self.btn_export_json)
         v.addLayout(act)
         pr = QHBoxLayout()
         self.bar = QProgressBar()
@@ -126,6 +128,7 @@ class MainWindow(QMainWindow):
         self.btn_stop.clicked.connect(self._request_stop)
         self.btn_restore.clicked.connect(self.restore_from_backup)
         self.btn_export.clicked.connect(self.export_mo)
+        self.btn_export_json.clicked.connect(self.export_json)
 
     # --- 대화상자(시험에서 바꿔 끼울 수 있게 메서드로 분리) -----------------------
     def ask_yes_no(self, text) -> bool:
@@ -149,6 +152,9 @@ class MainWindow(QMainWindow):
 
     def pick_save(self, default) -> str:
         return QFileDialog.getSaveFileName(self, "엑셀 파일 저장", default, "엑셀 (*.xlsx)")[0]
+
+    def pick_save_json(self, default) -> str:
+        return QFileDialog.getSaveFileName(self, "톤 JSON 저장", default, "톤 JSON (*.json)")[0]
 
     def pick_files(self) -> list:
         return QFileDialog.getOpenFileNames(self, "톤 JSON 선택(여러 개 가능)", self.ed_folder.text(), "톤 JSON (*.json)")[0]
@@ -183,7 +189,7 @@ class MainWindow(QMainWindow):
     def set_busy(self, busy: bool):
         self.busy = busy
         for b in (self.btn_reread, self.btn_folder, self.btn_json, self.btn_excel, self.btn_apply, self.btn_restore, self.btn_export,
-                  self.btn_sel_changed, self.btn_sel_all, self.btn_sel_none):
+                  self.btn_export_json, self.btn_sel_changed, self.btn_sel_all, self.btn_sel_none):
             b.setEnabled(not busy)
         self.btn_stop.setEnabled(False)
 
@@ -395,6 +401,27 @@ class MainWindow(QMainWindow):
         for s in range(1, 201):
             mofile.write_mo(d, s, codec.decode(self.dev_data[s]), unique=True)
         self.info("장비 200개를 저장했습니다: %s" % d)
+
+    def export_json(self):
+        """장비 200개를 톤 JSON 한 파일로 저장한다(곡 목록 없이). 저장 위치 대화상자가 덮어쓰기 확인을 한다."""
+        if not self.dev_data:
+            self.info("먼저 장비를 읽어 주십시오.")
+            return
+        prof = getattr(self.dev, "profile", None) or models.active()
+        path = self.pick_save_json(str(Path(self.ed_folder.text() or ".") / ("%s_톤.json" % prof.key)))
+        if not path:
+            return
+        warns = []
+        try:
+            doc = export.device_to_doc(self.dev_data, prof, "%s 장비 내보내기" % prof.label, warnings=warns)
+            export.write_doc(path, doc, overwrite=True)
+        except OSError as ex:
+            self.info("저장하지 못했습니다: %s" % ex)
+            return
+        msg = "장비 %d개를 톤 JSON 으로 저장했습니다: %s" % (len(doc["presets"]), path)
+        if warns:   # 사용자 샘플 칸·PITCH 모델처럼 다시 가져올 때 오류가 되는 내용(저장은 그대로 했음)
+            msg += "\n다시 가져올 때 오류가 되는 내용이 %d건 있습니다.\n%s%s" % (len(warns), "\n".join(warns[:10]), "\n..." if len(warns) > 10 else "")
+        self.info(msg)
 
     def show_excel(self):
         if not self.dev_data:

@@ -112,7 +112,7 @@ def _preset_data(n, count=200):
 @pytest.fixture
 def fast(monkeypatch):
     monkeypatch.setattr(device, "WRITE_ACK_TIMEOUT", 0.15)
-    monkeypatch.setattr(device, "READ_TIMEOUT", 0.6)
+    monkeypatch.setattr(device, "READ_TIMEOUT", 5.0)   # 메모리 장비라도 PC 가 무거우면 0.6초 안에 200개를 못 읽는다
 
 
 def _dev(hid):
@@ -666,6 +666,52 @@ def test_editor_state_detects_ge150_editor(monkeypatch):
         assert device.editor_state() == device.EDITOR_RUNNING, name
     monkeypatch.setattr(device.subprocess, "run", lambda *a, **k: R('"GE150PROUpdate.exe","1","Console","1","1 K"\n'))
     assert device.editor_state() == device.EDITOR_NONE
+
+
+def test_editor_state_always_filters_tasklist(monkeypatch):
+    """거르지 않은 tasklist 는 이 PC 에서 20초 걸려 늘 '확인 불가'가 됐다 — 모든 호출에 /FI 이름 필터가 있어야 한다."""
+    from ge150 import device
+    calls = []
+
+    class R:
+        returncode, stdout = 0, "INFO: No tasks are running which match the specified criteria.\n"
+
+    monkeypatch.setattr(device.subprocess, "run", lambda args, **k: (calls.append(list(args)), R())[1])
+    assert device.editor_state() == device.EDITOR_NONE
+    assert len(calls) == len(device.EDITOR_FILTERS) == 2
+    for args in calls:
+        assert "/FI" in args and args[args.index("/FI") + 1].startswith("IMAGENAME eq ")
+    assert [a[a.index("/FI") + 1] for a in calls] == ["IMAGENAME eq GE150*", "IMAGENAME eq MOOER*"]
+
+
+def test_editor_state_found_only_by_second_filter(monkeypatch):
+    """MOOER_GE150.exe 는 두 번째 필터(MOOER*)에서만 잡힌다 — 그래도 실행 중으로 본다."""
+    from ge150 import device
+
+    class R:
+        returncode = 0
+
+        def __init__(self, out):
+            self.stdout = out
+
+    def run(args, **k):
+        if args[args.index("/FI") + 1] == "IMAGENAME eq MOOER*":
+            return R('"MOOER_GE150.exe","1","Console","1","1 K"\n')
+        return R("INFO: No tasks are running which match the specified criteria.\n")
+
+    monkeypatch.setattr(device.subprocess, "run", run)
+    assert device.editor_state() == device.EDITOR_RUNNING
+
+
+def test_editor_state_unknown_if_second_filter_fails(monkeypatch):
+    from ge150 import device
+
+    class R:
+        def __init__(self, rc):
+            self.returncode, self.stdout = rc, ""
+
+    monkeypatch.setattr(device.subprocess, "run", lambda args, **k: R(0 if "GE150*" in args[2] else 1))
+    assert device.editor_state() == device.EDITOR_UNKNOWN
 
 
 def test_excel_user_strings_are_never_formulas(tmp_path):

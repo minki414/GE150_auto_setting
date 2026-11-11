@@ -61,7 +61,7 @@ class MemHid:
 @pytest.fixture
 def fast_timeouts(monkeypatch):
     monkeypatch.setattr(device, "WRITE_ACK_TIMEOUT", 0.15)
-    monkeypatch.setattr(device, "READ_TIMEOUT", 0.6)
+    monkeypatch.setattr(device, "READ_TIMEOUT", 5.0)   # PC 가 무거우면 메모리 장비도 0.6초 안에 못 읽어 시험이 흔들렸다
 
 
 def mem_device(hid):

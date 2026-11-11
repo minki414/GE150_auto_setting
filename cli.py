@@ -7,14 +7,18 @@
   python cli.py [--fake] plan <톤폴더>
   python cli.py [--fake] write <톤폴더> --slots 50D [50C ...] --allow-write
   python cli.py convert <톤json...> [--out <폴더>] [--device GE150|GE150PRO]   (장비 연결 없이 톤 JSON -> .mo)
+  python cli.py export-json <출력.json> [--from-backup <백업폴더>] [--songs <곡목록.txt>] [--title ...]   (장비 또는 백업 -> 톤 JSON)
+  python cli.py to-ge150 <Pro톤.json> --out <GE150톤.json> [--notes <내역.txt>]   (Pro 톤 JSON -> GE150 톤 JSON, 장비 연결 없음)
 장비 명령은 연결한 장비의 기종(GE150 Pro / GE150)을 읽기 응답 크기로 자동 판별합니다.
 convert 의 기종 우선순위: --device > JSON 의 device > GE150PRO.
 """
 import argparse
+import json
 import sys
+from collections import Counter
 from pathlib import Path
 
-from ge150 import backup, codec, device, models, mofile, plan, tonepack
+from ge150 import backup, codec, convert_model, device, export, models, mofile, plan, tonepack
 from ge150 import protocol as P
 
 
@@ -131,6 +135,74 @@ def cmd_convert(a):
     print("변환 완료: .mo %d개 -> %s" % (len(res.files), res.out_dir))
 
 
+def _refuse_existing(*paths):
+    for p in paths:
+        if p and Path(p).exists():
+            sys.exit("파일이 이미 있어 덮어쓰지 않습니다: %s" % p)
+
+
+def _backup_data(folder):
+    """백업 폴더를 읽기만 한다(장비에 연결하지 않음). 기종은 backup.json 의 device 로 정하고 활성 기종으로 삼는다."""
+    try:
+        proof = json.loads((Path(folder) / backup.PROOF_NAME).read_text(encoding="utf-8"))
+        prof = models.by_key(proof.get("device", models.PRO.key))
+    except (OSError, ValueError, AttributeError) as ex:
+        sys.exit("백업을 읽을 수 없습니다: %s" % ex)
+    if prof is None:
+        sys.exit("백업의 기종(device)을 알 수 없습니다: %r" % proof.get("device"))
+    models.set_active(prof)
+    try:
+        return backup.verify_backup(folder), prof
+    except backup.BackupError as ex:
+        sys.exit(str(ex))
+
+
+def cmd_export_json(a):
+    _refuse_existing(a.out)
+    try:
+        songs = export.parse_song_list(Path(a.songs).read_text(encoding="utf-8-sig")) if a.songs else None
+    except (OSError, UnicodeDecodeError) as ex:
+        sys.exit("곡 목록을 읽을 수 없습니다: %s" % ex)
+    if a.from_backup:
+        data, prof = _backup_data(a.from_backup)
+    else:
+        dev = open_device(a.fake)
+        try:
+            data = _read(dev)
+            prof = dev.profile or models.active()
+        finally:
+            dev.close()
+    warns = []
+    doc = export.device_to_doc(data, prof, a.title or "%s 장비 내보내기" % prof.label, songs, warns)
+    export.write_doc(a.out, doc)
+    for w in warns:
+        print("경고:", w)
+    print("톤 JSON 저장: %s (프리셋 %d개, 기종 %s, 경고 %d건)" % (a.out, len(doc["presets"]), prof.label, len(warns)))
+
+
+def cmd_to_ge150(a):
+    _refuse_existing(a.out, a.notes)
+    try:
+        doc = json.loads(Path(a.json).read_text(encoding="utf-8-sig"))
+    except (OSError, ValueError) as ex:
+        sys.exit("톤 JSON 을 읽을 수 없습니다: %s" % ex)
+    if not isinstance(doc, dict):
+        sys.exit("톤 JSON 이 객체가 아닙니다.")
+    stats = Counter()
+    new, notes = convert_model.to_ge150(doc, stats)
+    export.write_doc(a.out, new)
+    _, errors, warnings = tonepack.load_tonepacks([a.out], profile=models.GE150)   # 결과가 GE150 검사를 통과하는지
+    head = ["GE150 변환 내역: %s -> %s" % (Path(a.json).name, Path(a.out).name),
+            "변환 %d건 / GE150 검사 결과: 오류 %d건, 경고 %d건" % (len(notes), len(errors), len(warnings)), "종류별 건수:"]
+    head += ["  " + ln for ln in convert_model.summary(stats)]
+    text = "\n".join(head + [""] + notes + [""] + ["검사 오류: " + i.text() for i in errors]) + "\n"
+    print(text, end="")
+    if a.notes:
+        with open(a.notes, "x", encoding="utf-8", newline="\n") as f:
+            f.write(text)
+    sys.exit(1 if errors else 0)
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="GE150 / GE150 Pro 프리셋 적용기 시험 도구")
     ap.add_argument("--fake", action="store_true", help="가짜 장비(녹화 자료) 사용")
@@ -147,9 +219,18 @@ def main(argv=None):
     pc.add_argument("json", nargs="+")
     pc.add_argument("--out", default=None)
     pc.add_argument("--device", default=None, help="GE150 또는 GE150PRO(생략하면 JSON 의 device, 그것도 없으면 GE150PRO)")
+    pj = sub.add_parser("export-json")
+    pj.add_argument("out")
+    pj.add_argument("--from-backup", default=None, help="장비 대신 이 백업 폴더를 읽습니다(장비에 연결하지 않음)")
+    pj.add_argument("--songs", default=None, help="곡 목록 글 파일(한 줄에 'NN 아티스트 - 곡명')")
+    pj.add_argument("--title", default=None)
+    pg = sub.add_parser("to-ge150")
+    pg.add_argument("json")
+    pg.add_argument("--out", required=True)
+    pg.add_argument("--notes", default=None, help="변환 내역을 이 파일에도 저장합니다")
     a = ap.parse_args(argv)
-    if a.cmd == "convert":  # 장비가 필요 없다
-        return cmd_convert(a)
+    if a.cmd in ("convert", "to-ge150", "export-json"):  # 장비를 직접 열지 않는다(export-json 은 --from-backup 이 없을 때만 안에서 연다)
+        return {"convert": cmd_convert, "to-ge150": cmd_to_ge150, "export-json": cmd_export_json}[a.cmd](a)
     dev = open_device(a.fake)
     try:
         {"read": cmd_read, "backup": cmd_backup, "export": cmd_export, "plan": cmd_plan, "write": cmd_write}[a.cmd](dev, a)

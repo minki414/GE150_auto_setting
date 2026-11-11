@@ -15,6 +15,7 @@ from . import protocol as P
 VID, PIDS = 0x0483, (0x5703, 0x5750)   # GE150 Pro 는 5703(HID 는 MI_05 하나), GE150 은 에디터 분석상 5703 또는 5750
 # 공식 에디터 실행 파일: Pro = GE150PRO.exe, GE150 = GE150.exe(실행기) → MOOER_GE150.exe(본체)
 EDITOR_PROCESSES = ("GE150PRO.exe", "GE150.exe", "MOOER_GE150.exe")
+EDITOR_FILTERS = ("GE150*", "MOOER*")   # tasklist 이름 필터(위 3개를 모두 덮음)
 READ_TIMEOUT = 15.0   # 전체 읽기 제한(초)
 WRITE_ACK_TIMEOUT = 3.0  # 슬롯 쓰기 응답 대기(초)
 
@@ -30,20 +31,23 @@ def editor_state() -> str:
     """공식 에디터(GE150 Pro·GE150) 실행 상태: 없음 / 실행 중 / 확인 불가.
 
     A05: tasklist 오류·시간 초과는 '없음'이 아니라 '확인 불가'로 본다(USB 동시 사용 충돌 방지가 끊기지 않게).
-    tasklist /FI 는 이름 하나만 거를 수 있어 전체 목록을 받아 이름을 대조한다.
+    거르지 않은 tasklist 는 실측 20초(제한 10초 초과로 늘 '확인 불가'가 됨) → 이름 필터(와일드카드, 약 2.5초)를 2번 쓴다.
     """
     if sys.platform != "win32":
         return EDITOR_NONE
-    try:
-        flags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
-        r = subprocess.run(["tasklist", "/FO", "CSV", "/NH"], capture_output=True, text=True,
-                           errors="replace", timeout=10, creationflags=flags)
-    except (OSError, subprocess.SubprocessError):
-        return EDITOR_UNKNOWN
-    if r.returncode != 0:
-        return EDITOR_UNKNOWN
-    first = {ln.split(",")[0].strip('"').lower() for ln in r.stdout.splitlines() if ln.strip()}
-    return EDITOR_RUNNING if first & {p.lower() for p in EDITOR_PROCESSES} else EDITOR_NONE
+    want = {p.lower() for p in EDITOR_PROCESSES}
+    flags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+    for pattern in EDITOR_FILTERS:
+        try:
+            r = subprocess.run(["tasklist", "/FI", "IMAGENAME eq " + pattern, "/FO", "CSV", "/NH"], capture_output=True,
+                               text=True, errors="replace", timeout=10, creationflags=flags)
+        except (OSError, subprocess.SubprocessError):
+            return EDITOR_UNKNOWN
+        if r.returncode != 0:
+            return EDITOR_UNKNOWN
+        if {ln.split(",")[0].strip('"').lower() for ln in r.stdout.splitlines() if ln.strip()} & want:
+            return EDITOR_RUNNING
+    return EDITOR_NONE
 
 
 def editor_running() -> bool:

@@ -14,7 +14,16 @@ AI 가 만든 톤 JSON 이나 `.mo` 파일을 끌어다 놓으면 장비에 적�
 ## 내려받기
 이 저장소의 **Releases** 에서 `GE150PresetLoader.exe` 를 내려받아 실행합니다. 파이썬은 필요 없습니다.
 
+## 샘플 톤으로 바로 시작
+김마굴밴드 합주곡 50곡(200개 프리셋)의 톤 세트를 [samples](samples) 폴더에 넣어 두었습니다.
+- [GE150 Pro 용](samples/합주_GE150Pro.json) — 실제 장비에서 읽은 값
+- [GE150 용](samples/합주_GE150.json) — 위 파일을 자동 변환한 것(소리가 Pro 와 다를 수 있습니다. [변환 내역](samples/GE150_변환내역.txt))
+
+내 기종의 `.json` 을 프로그램 창에 끌어다 놓고 **전체 선택 → 장비에 적용**을 누르면 우리 밴드 세팅이 그대로 들어갑니다. 자세한 내용은 [samples/README.md](samples/README.md)입니다.
+
 ## 쓰는 순서
+샘플을 쓰려면 3·4단계 대신 샘플 JSON 을 끌어다 놓으면 됩니다.
+
 1. **연결**: 장비를 PC 에 연결하고 전원을 켭니다. 케이블은 GE150 Pro 는 USB-C, GE150 은 USB Type-B(PC 연결용 단자)입니다. 공식 에디터가 켜져 있으면 닫습니다.
 2. **실행**: `GE150PresetLoader.exe` 를 실행하면 장비를 읽어 200개 프리셋 목록을 보여 줍니다.
 3. **AI 에게 요청**: 내 기종의 요청문(`GE150Pro_AI_프롬프트.txt` / `GE150_AI_프롬프트.txt`, 이 저장소의 [prompts](prompts) 폴더, 또는 Releases 의 `GE150Pro_AI_prompt.txt` / `GE150_AI_prompt.txt`)을 열어 `[곡 목록]`에 곡을 적고, 전체를 ChatGPT·Claude·Gemini 같은 AI 에게 붙여 넣습니다. 받은 JSON 은 `.json` 파일로 저장합니다.
