@@ -1,0 +1,9756 @@
+{
+ "chains": [
+  {
+   "name": "FX/COMP",
+   "models": [
+    {
+     "name": "CRY WAH",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "Q",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "POSITION",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PEAK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "535 WAH",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "Q",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "POSITION",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PEAK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "AUTO WAH",
+     "paraPos": 3,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "RANGE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PEAK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TALK WAH AH",
+     "paraPos": 3,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "RANGE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PEAK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TALK WAH OH",
+     "paraPos": 3,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "RANGE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PEAK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TOUCH WAH",
+     "paraPos": 6,
+     "userSample": false,
+     "params": [
+      {
+       "name": "ATTACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "SENS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PEAK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "YELLOW COMP",
+     "paraPos": 7,
+     "userSample": false,
+     "params": [
+      {
+       "name": "ATTACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "THRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "RATIO",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BLUE COMP",
+     "paraPos": 7,
+     "userSample": false,
+     "params": [
+      {
+       "name": "ATTACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "THRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "RATIO",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "S-COMP",
+     "paraPos": 9,
+     "userSample": false,
+     "params": [
+      {
+       "name": "SENS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "RED COMP",
+     "paraPos": 9,
+     "userSample": false,
+     "params": [
+      {
+       "name": "SENS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "LIMIT",
+     "paraPos": 11,
+     "userSample": false,
+     "params": [
+      {
+       "name": "THRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "INTEL REDUCER",
+     "paraPos": 12,
+     "userSample": false,
+     "params": [
+      {
+       "name": "THRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "DS/OD",
+   "models": [
+    {
+     "name": "TUBE DR",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "808",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "PURE BOOST",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "FLEX BOOST",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "DDRIVE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BLACK RAT",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "GREY FAZE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MUFFY",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MTL ZONE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MTL MASTER",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "OBSESSIVE DIST",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "JIMMY OD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "FULL DRV",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SHRED",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BEEBEE PRE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BEEBEE +",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "RIET",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TIGHT DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "FULL DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "GOLD CLON",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "VX YUBE OD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TIGHT METAL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "THE JUICER",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "RUMBLE DRIVE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SOLO",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BLUES MOOD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BLUES CRAB",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HUSTLE DRIVE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "VOLUME",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "AMP",
+   "models": [
+    {
+     "name": "65 US DX",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "65 US TW",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "59 US BASS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "US SONIC",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "US BLUES CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "US BLUES OD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "J800",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "J900",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "PLX100",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "E650 CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "E650 DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "POWER BELL CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "POWER BELL DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BLACKNIGHT CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BLACKNIGHT DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MARKIII CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MARKIII DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MARKV CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MARKV DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TRI REC CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TRI REC DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "ROCK VRB CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "ROCK VRB DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CITRUS 30",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CITRUS 50",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SLOW 100 CR",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SLOW 100 DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "DR.ZEE 18 JR",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "DR.ZEE RECK",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "JET 100H CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "JET 100H OD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "JAZZ 120",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "UK30 CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "UK30 OD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HWT 103",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "PV 5050 CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "PV 5050 DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "REGAL TONE CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "REGAL TONE OD1",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "REGAL TONE OD2",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CAROL CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CAROL OD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CARDEFF",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EV 5050 CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EV 5050 DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HT CLUB CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HT CLUB DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HUGEN CL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HUGEN OD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HUGEN DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "KOCHE OD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "KOCHE DS",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "ACOUSTIC 1",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "ACOUSTIC 2",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "ACOUSTIC 3",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 1,
+     "userSample": true,
+     "params": [
+      {
+       "name": "GAIN",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BASS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MID",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TREBLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "PRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MST",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "CAB",
+   "models": [
+    {
+     "name": "US DLX 112",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "US TWN 212",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "US BASS 410",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SONIC 112",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "BLUES 112",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "1960 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EAGLE P412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EAGLE S412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MARK 112",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "REC 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CITRUS 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CITRUS 212",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SLOW 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "DR.ZEE 112",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "DR.ZEE 212",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "JAZZ 212",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "UK 212",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HWT 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "PV 5050 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "REGAL TONE 110",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TWO STONES 212",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CARDEFF 112",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EV 5050 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HT 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "GAS STATION 412",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "ACOUSTIC112",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      },
+      {
+       "name": "MIC",
+       "type": 1,
+       "options": [
+        "SM57",
+        "U47",
+        "U87",
+        "NT1",
+        "MD421",
+        "MD441",
+        "MXL2001",
+        "MXL2003",
+        "C3000",
+        "C4000B"
+       ]
+      },
+      {
+       "name": "CENTER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DISTANCE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "paraPos": 27,
+     "userSample": true,
+     "params": [
+      {
+       "name": "TUBE",
+       "type": 1,
+       "options": [
+        "OFF",
+        "EL34",
+        "EL84",
+        "6L6",
+        "6V6"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "NS GATE",
+   "models": [
+    {
+     "name": "NOISE KILLER",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "THRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "INTEL REDUCER",
+     "paraPos": 2,
+     "userSample": false,
+     "params": [
+      {
+       "name": "SENS",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "NOISE GATE",
+     "paraPos": 3,
+     "userSample": false,
+     "params": [
+      {
+       "name": "ATTACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "RELEASE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "THRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "EQ",
+   "models": [
+    {
+     "name": "MOOER G",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "100Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "250Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "630Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "1.6KHz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "4KHz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MOOER HM",
+     "paraPos": 2,
+     "userSample": false,
+     "params": [
+      {
+       "name": "80Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "240Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "750Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "2.2KHz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "6.6KHz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MOOER G-6",
+     "paraPos": 3,
+     "userSample": false,
+     "params": [
+      {
+       "name": "100Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "200Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "400Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "800Hz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "1.6KHz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "3.2KHz",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CUSTOM EQ",
+     "paraPos": 4,
+     "userSample": false,
+     "params": [
+      {
+       "name": "GAIN1",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "FREQ1",
+       "type": 0,
+       "min": 0.0,
+       "max": 18000.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "Hz"
+      },
+      {
+       "name": "GAIN2",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "FREQ2",
+       "type": 0,
+       "min": 0.0,
+       "max": 18000.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "Hz"
+      },
+      {
+       "name": "GAIN3",
+       "type": 0,
+       "min": -16.0,
+       "max": 16.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "FREQ3",
+       "type": 0,
+       "min": 0.0,
+       "max": 18000.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "Hz"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "MOD",
+   "models": [
+    {
+     "name": "PHASER",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "STEP PHASER",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "FAT PHASER",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "FLANGER",
+     "paraPos": 4,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "JET-FLANGER",
+     "paraPos": 4,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TREMOLO",
+     "paraPos": 6,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "STUTTER",
+     "paraPos": 6,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "VIBRATO",
+     "paraPos": 8,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "PITCH SHIFT",
+     "paraPos": 9,
+     "userSample": false,
+     "params": [
+      {
+       "name": "PITCH",
+       "type": 0,
+       "min": -12.0,
+       "max": 12.0,
+       "step": 0.1,
+       "decimals": 1,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "DETUNE",
+     "paraPos": 10,
+     "userSample": false,
+     "params": [
+      {
+       "name": "PITCH",
+       "type": 0,
+       "min": -20.0,
+       "max": 20.0,
+       "step": 0.1,
+       "decimals": 1,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "ROTARY",
+     "paraPos": 6,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "ANA-CHORUS",
+     "paraPos": 12,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "TRI-CHORUS",
+     "paraPos": 12,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "RING MOD",
+     "paraPos": 6,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "Q-FILTER",
+     "paraPos": 15,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "Q",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HIGH PASS",
+     "paraPos": 16,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "RANGE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "LOW PASS",
+     "paraPos": 16,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "RANGE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SLOW GEAR",
+     "paraPos": 18,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RISE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "LOFI",
+     "paraPos": 19,
+     "userSample": false,
+     "params": [
+      {
+       "name": "SAMPLE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "BIT",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "DUAL PHASER",
+     "paraPos": 20,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MODERN PHASER",
+     "paraPos": 20,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DEPTH",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "FLANGER PRO",
+     "paraPos": 22,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "FEEDBACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MODERN ROTARY",
+     "paraPos": 23,
+     "userSample": false,
+     "params": [
+      {
+       "name": "RATE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "MIX",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "OPTICAL TRMOLO",
+     "paraPos": 24,
+     "userSample": false,
+     "params": [
+      {
+       "name": "SPEED",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "INTENSITY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "OCTAVE",
+     "paraPos": 25,
+     "userSample": false,
+     "params": [
+      {
+       "name": "SUB",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "SUB TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "UPPER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "UPPER TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DRY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "DELAY",
+   "models": [
+    {
+     "name": "DIGITAL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB-D",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "ANALOG",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB-D",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "REAL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB-D",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "TAPE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB-D",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "MOD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB-D",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "REVERSE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB-D",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "PINGPONG",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB-D",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      }
+     ]
+    },
+    {
+     "name": "DYNAMIC",
+     "paraPos": 8,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB-D",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      },
+      {
+       "name": "THRES",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "DUAL DELAY",
+     "paraPos": 9,
+     "userSample": false,
+     "params": [
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "F.BACK",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TIME A",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB A",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      },
+      {
+       "name": "TIME B",
+       "type": 0,
+       "min": 40.0,
+       "max": 2500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": "ms"
+      },
+      {
+       "name": "SUB B",
+       "type": 1,
+       "options": [
+        "OFF",
+        "1/4",
+        "1/4T",
+        "1/4D",
+        "1/8",
+        "1/8T",
+        "1/8D",
+        "1/16",
+        "1/16T",
+        "1/16D"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "REVERB",
+   "models": [
+    {
+     "name": "ROOM",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "P.DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DECAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "HALL",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "P.DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DECAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CHURCH",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "P.DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DECAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "PLATE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "P.DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DECAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SPRING",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "P.DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DECAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "MOD",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "P.DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DECAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "CAVE",
+     "paraPos": 1,
+     "userSample": false,
+     "params": [
+      {
+       "name": "P.DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DECAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    },
+    {
+     "name": "SHIMMER",
+     "paraPos": 8,
+     "userSample": false,
+     "params": [
+      {
+       "name": "P.DELAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 500.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "LEVEL",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "DECAY",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "TONE",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      },
+      {
+       "name": "SHIMMER",
+       "type": 0,
+       "min": 0.0,
+       "max": 100.0,
+       "step": 1.0,
+       "decimals": 0,
+       "suffix": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

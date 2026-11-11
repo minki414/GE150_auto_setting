@@ -1,0 +1,28 @@
+{
+  "format": "GE150PRO-TONEPACK",
+  "version": 1,
+  "title": "<톤 묶음 이름>",
+  "presets": [
+    {
+      "slot": "01A",
+      "name": "Antifreeze CLN",
+      "song": "Antifreeze",
+      "artist": "검정치마",
+      "role": "CLEAN",
+      "modules": {
+        "FX/COMP": {"on": true,  "model": "YELLOW COMP", "params": {"ATTACK": 50, "THRES": 45, "RATIO": 30, "LEVEL": 55}},
+        "DS/OD":   {"on": false, "model": "TUBE DR",     "params": {"VOLUME": 60, "TONE": 50, "GAIN": 30}},
+        "AMP":     {"on": true,  "model": "65 US DX",    "params": {"GAIN": 25, "BASS": 50, "MID": 50, "TREBLE": 55, "PRES": 50, "MST": 55}},
+        "CAB":     {"on": true,  "model": "US DLX 112",  "params": {"TUBE": "6V6", "MIC": "SM57", "CENTER": 30, "DISTANCE": 40}},
+        "NS GATE": {"on": true,  "model": "NOISE GATE",  "params": {"ATTACK": 50, "RELEASE": 50, "THRES": 35}},
+        "EQ":      {"on": false, "model": "MOOER G",     "params": {"100Hz": 0, "250Hz": 0, "630Hz": 0, "1.6KHz": 0, "4KHz": 0}},
+        "MOD":     {"on": true,  "model": "ANA-CHORUS",  "params": {"RATE": 30, "MIX": 40, "TONE": 50, "DEPTH": 45}},
+        "DELAY":   {"on": false, "model": "DIGITAL",     "params": {"LEVEL": 20, "F.BACK": 25, "TIME": 380, "SUB-D": "OFF"}},
+        "REVERB":  {"on": true,  "model": "ROOM",        "params": {"DECAY": 40, "LEVEL": 25, "P.DELAY": 20, "TONE": 50}}
+      },
+      "memo": "<연주 위치·톤 의도 한 줄, 한국어 가능>",
+      "sources": ["<참고한 자료 URL>"],
+      "confidence": "A"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.venv/
+.tmp*/
+.tmp*
+dist/
+build/
+백업/
+__pycache__/
+*.pyc
+*.spec
+.pytest_cache/
