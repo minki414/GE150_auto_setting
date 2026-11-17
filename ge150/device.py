@@ -16,6 +16,10 @@ VID, PIDS = 0x0483, (0x5703, 0x5750)   # GE150 Pro 는 5703(HID 는 MI_05 하나
 # 공식 에디터 실행 파일: Pro = GE150PRO.exe, GE150 = GE150.exe(실행기) → MOOER_GE150.exe(본체)
 EDITOR_PROCESSES = ("GE150PRO.exe", "GE150.exe", "MOOER_GE150.exe")
 EDITOR_FILTERS = ("GE150*", "MOOER*")   # tasklist 이름 필터(위 3개를 모두 덮음)
+# 맥 공식 에디터(2026-11-17 공식 배포본 GE150_Pro_V2.1.4_Mac·GE150_V1.3.8_Mac 의 앱 묶음에서 확인한 실행 파일 이름):
+# Pro = GE150PRO.app(실행기 GE150PROUpdate) 안의 GE150PRO.app → GE150PRO, GE150 = GE150.app → GE150.
+# MOOER_GE150 은 윈도우 이름이지만 맥 이름이 바뀌어도 막히도록 함께 본다. 실행기(GE150PROUpdate)는 윈도우와 같게 에디터로 보지 않는다.
+MAC_EDITOR_PROCESSES = ("GE150PRO", "GE150", "MOOER_GE150")
 READ_TIMEOUT = 15.0   # 전체 읽기 제한(초)
 WRITE_ACK_TIMEOUT = 3.0  # 슬롯 쓰기 응답 대기(초)
 
@@ -33,6 +37,8 @@ def editor_state() -> str:
     A05: tasklist 오류·시간 초과는 '없음'이 아니라 '확인 불가'로 본다(USB 동시 사용 충돌 방지가 끊기지 않게).
     거르지 않은 tasklist 는 실측 20초(제한 10초 초과로 늘 '확인 불가'가 됨) → 이름 필터(와일드카드, 약 2.5초)를 2번 쓴다.
     """
+    if sys.platform == "darwin":
+        return _mac_editor_state()
     if sys.platform != "win32":
         return EDITOR_NONE
     want = {p.lower() for p in EDITOR_PROCESSES}
@@ -48,6 +54,19 @@ def editor_state() -> str:
         if {ln.split(",")[0].strip('"').lower() for ln in r.stdout.splitlines() if ln.strip()} & want:
             return EDITOR_RUNNING
     return EDITOR_NONE
+
+
+def _mac_editor_state() -> str:
+    """맥: ps 로 모든 프로세스의 실행 파일 경로를 받아 마지막 이름이 에디터와 같은지 본다. 오류·시간 초과는 '확인 불가'."""
+    want = {p.lower() for p in MAC_EDITOR_PROCESSES}
+    try:
+        r = subprocess.run(["ps", "-axo", "comm="], capture_output=True, text=True, errors="replace", timeout=10)
+    except (OSError, subprocess.SubprocessError):
+        return EDITOR_UNKNOWN
+    if r.returncode != 0 or not r.stdout.strip():
+        return EDITOR_UNKNOWN   # ps 가 아무것도 안 보여 주면 이 프로그램조차 못 본 것이므로 '없음'으로 믿지 않는다
+    names = {ln.strip().rsplit("/", 1)[-1].lower() for ln in r.stdout.splitlines() if ln.strip()}
+    return EDITOR_RUNNING if names & want else EDITOR_NONE
 
 
 def editor_running() -> bool:

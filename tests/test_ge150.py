@@ -654,6 +654,7 @@ def test_main_fake_argument_parsing(monkeypatch):
 def test_editor_state_detects_ge150_editor(monkeypatch):
     """GE150 공식 에디터(실행기 GE150.exe·본체 MOOER_GE150.exe)가 켜져 있어도 연결·적용을 막는다."""
     from ge150 import device
+    monkeypatch.setattr(device.sys, "platform", "win32")   # tasklist 경로(윈도우)를 시험한다
 
     class R:
         returncode = 0
@@ -671,6 +672,7 @@ def test_editor_state_detects_ge150_editor(monkeypatch):
 def test_editor_state_always_filters_tasklist(monkeypatch):
     """거르지 않은 tasklist 는 이 PC 에서 20초 걸려 늘 '확인 불가'가 됐다 — 모든 호출에 /FI 이름 필터가 있어야 한다."""
     from ge150 import device
+    monkeypatch.setattr(device.sys, "platform", "win32")   # tasklist 경로(윈도우)를 시험한다
     calls = []
 
     class R:
@@ -687,6 +689,7 @@ def test_editor_state_always_filters_tasklist(monkeypatch):
 def test_editor_state_found_only_by_second_filter(monkeypatch):
     """MOOER_GE150.exe 는 두 번째 필터(MOOER*)에서만 잡힌다 — 그래도 실행 중으로 본다."""
     from ge150 import device
+    monkeypatch.setattr(device.sys, "platform", "win32")   # tasklist 경로(윈도우)를 시험한다
 
     class R:
         returncode = 0
@@ -705,6 +708,7 @@ def test_editor_state_found_only_by_second_filter(monkeypatch):
 
 def test_editor_state_unknown_if_second_filter_fails(monkeypatch):
     from ge150 import device
+    monkeypatch.setattr(device.sys, "platform", "win32")   # tasklist 경로(윈도우)를 시험한다
 
     class R:
         def __init__(self, rc):
@@ -712,6 +716,57 @@ def test_editor_state_unknown_if_second_filter_fails(monkeypatch):
 
     monkeypatch.setattr(device.subprocess, "run", lambda args, **k: R(0 if "GE150*" in args[2] else 1))
     assert device.editor_state() == device.EDITOR_UNKNOWN
+
+
+def _ps(out, rc=0):
+    class R:
+        returncode, stdout = rc, out
+    return R()
+
+
+def test_mac_editor_state_detects_editors(monkeypatch):
+    """맥: ps 의 실행 파일 경로 끝 이름으로 공식 에디터(Pro: GE150PRO, GE150: GE150)를 찾는다. 실행기 GE150PROUpdate 는 에디터가 아니다."""
+    from ge150 import device
+    monkeypatch.setattr(device.sys, "platform", "darwin")
+    calls = []
+    base = "/sbin/launchd\n/System/Library/CoreServices/Finder.app/Contents/MacOS/Finder\n"
+    for path in ("/Applications/GE150PRO.app/Contents/MacOS/GE150PRO.app/Contents/MacOS/GE150PRO",
+                 "/Applications/GE150.app/Contents/MacOS/GE150"):
+        monkeypatch.setattr(device.subprocess, "run", lambda args, _p=path, **k: (calls.append(list(args)), _ps(base + _p + "\n"))[1])
+        assert device.editor_state() == device.EDITOR_RUNNING, path
+    assert calls[0][0] == "ps" and "tasklist" not in calls[0]
+    for path in ("/Applications/GE150PRO.app/Contents/MacOS/GE150PROUpdate", "/Applications/GE150PresetLoader.app/Contents/MacOS/GE150PresetLoader"):
+        monkeypatch.setattr(device.subprocess, "run", lambda *a, _p=path, **k: _ps(base + _p + "\n"))
+        assert device.editor_state() == device.EDITOR_NONE, path
+
+
+def test_mac_editor_state_unknown_on_ps_failure(monkeypatch):
+    """맥: ps 오류·빈 출력·시간 초과는 '없음'이 아니라 '확인 불가'(윈도우 A05 와 같은 원칙)."""
+    import subprocess
+    from ge150 import device
+    monkeypatch.setattr(device.sys, "platform", "darwin")
+    monkeypatch.setattr(device.subprocess, "run", lambda *a, **k: _ps("", rc=1))
+    assert device.editor_state() == device.EDITOR_UNKNOWN
+    monkeypatch.setattr(device.subprocess, "run", lambda *a, **k: _ps(""))
+    assert device.editor_state() == device.EDITOR_UNKNOWN
+
+    def boom(*a, **k):
+        raise subprocess.TimeoutExpired("ps", 10)
+    monkeypatch.setattr(device.subprocess, "run", boom)
+    assert device.editor_state() == device.EDITOR_UNKNOWN
+
+
+def test_default_backup_root_per_platform(monkeypatch, tmp_path):
+    """포장된 앱의 백업 위치: 윈도우 exe 옆 / 맥은 문서 폴더(앱 묶음 안이나 읽기 전용 임시 위치에 쓰지 않게)."""
+    from ge150 import backup
+    monkeypatch.setattr(backup.sys, "frozen", True, raising=False)
+    monkeypatch.setattr(backup.sys, "executable", str(tmp_path / "GE150PresetLoader.app" / "Contents" / "MacOS" / "GE150PresetLoader"))
+    monkeypatch.setattr(backup.Path, "home", classmethod(lambda cls: tmp_path / "home"))
+    monkeypatch.setattr(backup.sys, "platform", "darwin")
+    assert backup.default_backup_root() == tmp_path / "home" / "Documents" / "GE150PresetLoader" / "백업"
+    monkeypatch.setattr(backup.sys, "platform", "win32")
+    monkeypatch.setattr(backup.sys, "executable", str(tmp_path / "GE150PresetLoader.exe"))
+    assert backup.default_backup_root() == tmp_path / "백업"
 
 
 def test_excel_user_strings_are_never_formulas(tmp_path):

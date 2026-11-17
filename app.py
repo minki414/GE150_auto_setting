@@ -2,11 +2,11 @@
 
 USB 작업(읽기·쓰기)은 모두 QThread 에서 해서 창이 멈추지 않게 한다.
 """
-import os
 import sys
 from pathlib import Path
 
-from PySide6.QtCore import QThread, Qt, Signal
+from PySide6.QtCore import QThread, Qt, QUrl, Signal
+from PySide6.QtGui import QDesktopServices
 from PySide6.QtWidgets import (QApplication, QComboBox, QDialog, QFileDialog, QHBoxLayout, QLabel, QLineEdit,
                                QMainWindow, QMessageBox, QProgressBar, QPushButton, QTableWidget, QTableWidgetItem,
                                QVBoxLayout, QWidget)
@@ -183,7 +183,8 @@ class MainWindow(QMainWindow):
         return None if self.fake else device.editor_blocked_reason()
 
     def open_file(self, path):
-        os.startfile(str(path))  # noqa: Windows 기본 프로그램으로 연다
+        # 윈도우·맥 모두 기본 프로그램(엑셀·Numbers 등)으로 연다
+        QDesktopServices.openUrl(QUrl.fromLocalFile(str(Path(path).resolve())))
 
     # --- 상태 ----------------------------------------------------------------
     def set_busy(self, busy: bool):

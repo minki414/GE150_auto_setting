@@ -262,6 +262,7 @@ class _Run:
 
 
 def test_a05_editor_state(monkeypatch):
+    monkeypatch.setattr(device.sys, "platform", "win32")   # tasklist 경로(윈도우)를 시험한다
     def fake(out):
         monkeypatch.setattr(device.subprocess, "run", lambda *a, **k: out() if callable(out) else out)
     fake(_Run('"GE150PRO.exe","1234","Console","1","50,000 K"\n'))
