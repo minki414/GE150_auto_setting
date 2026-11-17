@@ -1,0 +1,65 @@
+# Windows·Mac(Apple 칩·Intel)에서 시험을 돌리고 실행 파일을 만든다.
+# v 로 시작하는 태그를 올리면 그 릴리스에 세 파일을 올린다.
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            artifact: dist/GE150PresetLoader.exe
+          - os: macos-latest          # Apple 칩(arm64)
+            artifact: dist/GE150PresetLoader-mac-arm64.zip
+          - os: macos-15-intel        # Intel(x86_64)
+            artifact: dist/GE150PresetLoader-mac-x86_64.zip
+    runs-on: ${{ matrix.os }}
+    env:
+      QT_QPA_PLATFORM: offscreen
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: 의존성 설치
+        run: python -m pip install -r requirements.txt pytest pyinstaller
+      - name: 시험
+        run: python -m pytest -q
+      - name: 실행 파일 만들기
+        run: python tools/build_exe.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.os }}
+          path: ${{ matrix.artifact }}
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: out
+          merge-multiple: true
+      - name: 릴리스에 올리기
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release view "$TAG" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$TAG" -R "$GITHUB_REPOSITORY" --generate-notes
+          gh release upload "$TAG" -R "$GITHUB_REPOSITORY" --clobber out/*

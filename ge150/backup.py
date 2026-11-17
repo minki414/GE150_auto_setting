@@ -20,10 +20,20 @@ class BackupError(ValueError):
     """백업 폴더가 손상되었거나 증명 파일과 맞지 않음(복원을 거부한다)."""
 
 
+APP_DIR_NAME = "GE150PresetLoader"
+
+
 def default_backup_root() -> Path:
-    # exe 옆 '백업' 폴더. 개발 중에는 프로젝트 폴더의 백업 (경로를 코드에 박지 않는다)
-    base = Path(sys.executable).parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parents[1]
-    return base / "백업"
+    """윈도우 exe: exe 옆 '백업' 폴더. 맥 앱: 문서/GE150PresetLoader/백업. 개발 중에는 프로젝트 폴더의 백업.
+
+    맥 앱의 실행 파일은 GE150PresetLoader.app/Contents/MacOS 안에 있고, 내려받은 앱은 macOS 가 읽기 전용 임시 위치에서
+    실행하기도 해서(App Translocation) '실행 파일 옆'에 쓸 수 없다. 그래서 사용자가 찾기 쉬운 문서 폴더에 둔다.
+    """
+    if getattr(sys, "frozen", False):
+        if sys.platform == "darwin":
+            return Path.home() / "Documents" / APP_DIR_NAME / "백업"
+        return Path(sys.executable).parent / "백업"
+    return Path(__file__).resolve().parents[1] / "백업"
 
 
 def device_bin(data: dict) -> bytes:
@@ -118,9 +128,12 @@ def write_result(folder, text: str) -> Path:
 
 
 def fallback_dir() -> Path:
-    """결과.txt 저장에 실패했을 때 한 번 더 저장해 보는 위치(%LOCALAPPDATA%\\GE150PresetLoader)."""
+    """결과.txt 저장에 실패했을 때 한 번 더 저장해 보는 위치.
+    윈도우: %LOCALAPPDATA%\\GE150PresetLoader, 맥: ~/Library/Application Support/GE150PresetLoader."""
+    if sys.platform == "darwin":
+        return Path.home() / "Library" / "Application Support" / APP_DIR_NAME
     base = os.environ.get("LOCALAPPDATA") or str(Path.home() / "AppData" / "Local")
-    return Path(base) / "GE150PresetLoader"
+    return Path(base) / APP_DIR_NAME
 
 
 def write_fallback_result(text: str, now=None) -> Path:
